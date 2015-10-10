@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/yconoclast/verifyjs.svg)](https://travis-ci.org/yconoclast/verifyjs)
 
+[![Dependency Status](https://david-dm.org/yconoclast/verifyjs.svg)](https://david-dm.org/yconoclast/verifyjs)
+[![devDependency Status](https://david-dm.org/yconoclast/verifyjs/dev-status.svg)](https://david-dm.org/yconoclast/verifyjs#info=devDependencies)
+
 ### Contributing
 
 If you'd like to contribute a change to VerifyJS, modify the files in `src/` and `test/`
