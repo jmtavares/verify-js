@@ -82,20 +82,20 @@
 
     Object.isInstanceOf = function (obj, instance) {
         return new Promise(function (resolve, reject) {
-            validate(obj) ? resolve(obj) : reject(obj);
+            validate(obj, instance) ? resolve(obj) : reject(obj);
         });
 
-        function validate(obj) {
+        function validate(obj, instance) {
             return obj instanceof instance;
         }
     };
 
     Object.isNotInstanceOf = function (obj, instance) {
         return new Promise(function (resolve, reject) {
-            validate(obj) ? resolve(obj) : reject(obj);
+            validate(obj, instance) ? resolve(obj) : reject(obj);
         });
 
-        function validate(obj) {
+        function validate(obj, instance) {
             return !(obj instanceof instance);
         }
     };

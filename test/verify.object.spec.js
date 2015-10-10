@@ -105,7 +105,9 @@ describe('Verify Object Unit testing', function () {
         });
 
         it('should resolve | reject', function (done) {
-            function Person() {}
+            function Person() {
+            }
+
             var input = new Person();
 
             expect(Object.isInstanceOf(input, Person)).toBeResolved();
@@ -113,7 +115,9 @@ describe('Verify Object Unit testing', function () {
         });
 
         it('should reject | resolve', function (done) {
-            function Person() {}
+            function Person() {
+            }
+
             var input = {};
 
             expect(Object.isInstanceOf(input, Person)).toBeRejected();
@@ -126,7 +130,7 @@ describe('Verify Object Unit testing', function () {
             expect(Object.hasOwnProperties).toBeDefined();
         });
 
-        it('should resolve | reject', function (done) {
+        it('should resolve', function (done) {
             var input = {
                 firstName: 'John',
                 lastName: 'Doe',
@@ -136,7 +140,7 @@ describe('Verify Object Unit testing', function () {
             expect(Object.hasOwnProperties(input)).toBeResolved(done);
         });
 
-        it('should reject | resolve', function (done) {
+        it('should reject', function (done) {
             var input = {};
 
             expect(Object.hasOwnProperties(input)).toBeRejected(done);

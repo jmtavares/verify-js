@@ -55,6 +55,7 @@ Object.hasOwnProperties(input)
 ``` js
 Array.isEmpty(input)
 Array.isNotEmpty(input)
+Array.hasXElements(input, length)
 ```
 
 ### String
