@@ -45,11 +45,13 @@ module.exports = function (grunt) {
                 }
             }
         },
+
         versioncheck: {
             options: {
                 hideUpToDate : true
             }
         },
+
         karma: {
             unit: {
                 configFile: 'karma.conf.js'

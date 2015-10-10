@@ -21,6 +21,7 @@
     "grunt-karma": "^0.12.1",
     "grunt-version-check": "^0.3.1",
     "jasmine-core": "^2.3.4",
+    "jasmine-es6-promise-matchers": "^2.0.1",
     "karma": "^0.13.10",
     "karma-coverage": "^0.5.2",
     "karma-jasmine": "^0.3.6",
