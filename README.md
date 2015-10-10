@@ -21,8 +21,8 @@ Object.isDefined(input).then(
 #### Multiple inputs
 ``` js
 Promise.all([
-    Object.isNotDefined(input1),
-    Object.isNotDefined(input2)
+    Object.isDefined(input1),
+    Object.isDefined(input2)
 ]).then(
     function () {      
         // Valid Data
