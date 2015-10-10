@@ -1,4 +1,6 @@
 notifications:
   email:
     - josetavares00@gmail.com
+before_install: npm install -g grunt-cli
+install: npm install
 script: grunt
