@@ -4,7 +4,7 @@
 
 ### Contributing
 
-If you'd like to contribute a change to VerifyJS, modify the files in `src/`
+If you'd like to contribute a change to VerifyJS, modify the files in `src/` and `test/`
 
 ``` sh
 $ npm install
