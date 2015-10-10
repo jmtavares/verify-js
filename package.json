@@ -30,6 +30,6 @@
     "phantomjs": "^1.9.18"
   },
   "dependencies": {
-    "es6-promise": "^3.0.2"
+    "promise-polyfill": "^2.1.0"
   }
 }

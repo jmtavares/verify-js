@@ -19,12 +19,12 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     mangle: true,
-                    preserveComments: true,
+                    preserveComments: false,
                     banner: grunt.file.readJSON('package.json').banner
                 },
                 files: {
                     'verify.min.js': [
-                        'node_modules/es6-promise/dist/es6-promise.min.js',
+                        'node_modules/promise-polyfill/Promise.min.js',
                         'src/*.js'
                     ]
                 }
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'verify.js': [
-                        'node_modules/es6-promise/dist/es6-promise.js',
+                        'node_modules/promise-polyfill/Promise.js',
                         'src/*.js'
                     ]
                 }

@@ -10,7 +10,7 @@ module.exports = function (config) {
             // list of files / patterns to load in the browser (order matters)
             files: [
                 'node_modules/jasmine-es6-promise-matchers/jasmine-es6-promise-matchers.js',
-                'node_modules/es6-promise/dist/es6-promise.js',
+                'node_modules/promise-polyfill/Promise.js',
                 'src/*.js',
                 'test/*.spec.js'
             ],
