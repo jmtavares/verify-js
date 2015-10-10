@@ -12,7 +12,7 @@ module.exports = function (grunt) {
             options: {
                 configFile: 'eslint.json'
             },
-            target: ['src/*.js']
+            target: ['src/*.js', 'test/*.spec.js']
         },
 
         uglify: {
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'verify.js': [
-                        'node_modules/es6-promise/dist/es6-promise.min.js',
+                        'node_modules/es6-promise/dist/es6-promise.js',
                         'src/*.js'
                     ]
                 }
