@@ -35,12 +35,16 @@ Promise.all([
 ## Methods
 ### Object
 
-* `Object.isDefined(obj)`
-* `Object.isNotDefined(obj)`
-* `Object.isNull(obj)`
-* `Object.isNotNull(obj)`
-* `Object.isUndefined(obj)`
-* `Object.isNotUndefined(obj)`
+``` js
+Object.isObject(obj)
+Object.isNotObject(obj)
+Object.isDefined(obj)
+Object.isNotDefined(obj)
+Object.isNull(obj)
+Object.isNotNull(obj)
+Object.isUndefined(obj)
+Object.isNotUndefined(obj)
+```
 
 ## Contributing
 
@@ -51,7 +55,7 @@ $ npm install
 $ grunt test
 ```
 
-Please do not check-in the built files verify.js and verify.min.js in pull requests.
+Please do not check-in the built files `verify.js` and `verify.min.js` in pull requests.
 
 ## License
 Licensed as MIT. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.

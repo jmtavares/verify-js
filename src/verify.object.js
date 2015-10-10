@@ -1,3 +1,23 @@
+Object.isObject = function (obj) {
+    return new Promise(function (resolve, reject) {
+        validate(obj) ? resolve(obj) : reject(obj);
+    });
+
+    function validate(obj) {
+        return typeof obj === 'object';
+    }
+};
+
+Object.isNotObject = function (obj) {
+    return new Promise(function (resolve, reject) {
+        validate(obj) ? resolve(obj) : reject(obj);
+    });
+
+    function validate(obj) {
+        return typeof obj !== 'object';
+    }
+};
+
 Object.isDefined = function (obj) {
     return new Promise(function (resolve, reject) {
         validate(obj) ? resolve(obj) : reject(obj);
