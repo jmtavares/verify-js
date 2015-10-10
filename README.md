@@ -1,5 +1,5 @@
 # VerifyJS
-A tool to verify the validity of your data using Promises.
+Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).
 
 [![Build Status](https://travis-ci.org/yconoclast/verifyjs.svg)](https://travis-ci.org/yconoclast/verifyjs)
 [![Dependency Status](https://david-dm.org/yconoclast/verifyjs.svg)](https://david-dm.org/yconoclast/verifjs)
