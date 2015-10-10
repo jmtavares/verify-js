@@ -11,7 +11,7 @@ module.exports = function (config) {
             files: [
                 'node_modules/jasmine-es6-promise-matchers/jasmine-es6-promise-matchers.js',
                 'node_modules/es6-promise/dist/es6-promise.js',
-                'src/verify.js',
+                'src/*.js',
                 'test/*.spec.js'
             ],
 
