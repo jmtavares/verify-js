@@ -528,74 +528,200 @@
     lib$es6$promise$polyfill$$default();
 }).call(this);
 
-Object.isObject = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return typeof obj === "object";
-    }
-};
+"use strict";
 
-Object.isNotObject = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return typeof obj !== "object";
-    }
-};
+(function() {
+    Array.isEmpty = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj instanceof Array && obj.length === 0;
+        }
+    };
+    Array.isNotEmpty = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj instanceof Array && obj.length !== 0;
+        }
+    };
+})();
 
-Object.isDefined = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj !== undefined && obj !== null;
-    }
-};
+"use strict";
 
-Object.isNotDefined = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj === undefined || obj === null;
-    }
-};
+(function() {
+    Boolean.isBoolean = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj === "boolean";
+        }
+    };
+    Boolean.isNotBoolean = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj !== "boolean";
+        }
+    };
+})();
 
-Object.isNull = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj === null;
-    }
-};
+"use strict";
 
-Object.isNotNull = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj !== null;
-    }
-};
+(function() {
+    Function.isFunction = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj === "function";
+        }
+    };
+    Function.isNotFunction = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj !== "function";
+        }
+    };
+})();
 
-Object.isUndefined = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj === undefined;
-    }
-};
+"use strict";
 
-Object.isNotUndefined = function(obj) {
-    return new Promise(function(resolve, reject) {
-        validate(obj) ? resolve(obj) : reject(obj);
-    });
-    function validate(obj) {
-        return obj !== undefined;
-    }
-};
+(function() {
+    Number.isNumber = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj === "number";
+        }
+    };
+    Number.isNotNumber = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj !== "number";
+        }
+    };
+})();
+
+"use strict";
+
+(function() {
+    Object.isObject = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj === "object";
+        }
+    };
+    Object.isNotObject = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj !== "object";
+        }
+    };
+    Object.isDefined = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj !== undefined && obj !== null;
+        }
+    };
+    Object.isNotDefined = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj === undefined || obj === null;
+        }
+    };
+    Object.isNull = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj === null;
+        }
+    };
+    Object.isNotNull = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj !== null;
+        }
+    };
+    Object.isUndefined = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj === undefined;
+        }
+    };
+    Object.isNotUndefined = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj !== undefined;
+        }
+    };
+    Object.isInstanceOf = function(obj, instance) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return obj instanceof instance;
+        }
+    };
+    Object.isNotInstanceOf = function(obj, instance) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return !(obj instanceof instance);
+        }
+    };
+    Object.hasOwnProperties = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return Object.getOwnPropertyNames(obj).length !== 0;
+        }
+    };
+})();
+
+"use strict";
+
+(function() {
+    String.isString = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj === "string";
+        }
+    };
+    String.isNotString = function(obj) {
+        return new Promise(function(resolve, reject) {
+            validate(obj) ? resolve(obj) : reject(obj);
+        });
+        function validate(obj) {
+            return typeof obj !== "string";
+        }
+    };
+})();

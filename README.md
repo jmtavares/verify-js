@@ -36,14 +36,52 @@ Promise.all([
 ### Object
 
 ``` js
-Object.isObject(obj)
-Object.isNotObject(obj)
-Object.isDefined(obj)
-Object.isNotDefined(obj)
-Object.isNull(obj)
-Object.isNotNull(obj)
-Object.isUndefined(obj)
-Object.isNotUndefined(obj)
+Object.isObject(input)
+Object.isNotObject(input)
+Object.isDefined(input)
+Object.isNotDefined(input)
+Object.isNull(input)
+Object.isNotNull(input)
+Object.isUndefined(input)
+Object.isNotUndefined(input)
+Object.isInstanceOf(input, instance)
+Object.isNotInstanceOf(input, instance)
+Object.hasOwnProperties(input)
+```
+
+### Array
+
+``` js
+Array.isEmpty(input)
+Array.isNotEmpty(input)
+```
+
+### String
+
+``` js
+String.isString(input)
+String.isNotString(input)
+```
+
+### Number
+
+``` js
+Number.isNumber(input)
+Number.isNotNumber(input)
+```
+
+### Boolean
+
+``` js
+Boolean.isBoolean(input)
+Boolean.isNotBoolean(input)
+```
+
+### Function
+
+``` js
+Function.isFunction(input)
+Function.isNotFunction(input)
 ```
 
 ## Contributing

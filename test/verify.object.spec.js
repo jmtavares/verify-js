@@ -97,4 +97,49 @@ describe('Verify Object Unit testing', function () {
             expect(Object.isNotUndefined(input)).toBeResolved(done);
         });
     });
+
+    describe('Object.isInstanceOf | Object.isNotInstanceOf', function () {
+        it('should exist', function () {
+            expect(Object.isInstanceOf).toBeDefined();
+            expect(Object.isNotObject).toBeDefined();
+        });
+
+        it('should resolve | reject', function (done) {
+            function Person() {}
+            var input = new Person();
+
+            expect(Object.isInstanceOf(input, Person)).toBeResolved();
+            expect(Object.isNotInstanceOf(input, Person)).toBeRejected(done);
+        });
+
+        it('should reject | resolve', function (done) {
+            function Person() {}
+            var input = {};
+
+            expect(Object.isInstanceOf(input, Person)).toBeRejected();
+            expect(Object.isNotInstanceOf(input, Person)).toBeResolved(done);
+        });
+    });
+
+    describe('Object.hasOwnProperties', function () {
+        it('should exist', function () {
+            expect(Object.hasOwnProperties).toBeDefined();
+        });
+
+        it('should resolve | reject', function (done) {
+            var input = {
+                firstName: 'John',
+                lastName: 'Doe',
+                age: 24
+            };
+
+            expect(Object.hasOwnProperties(input)).toBeResolved(done);
+        });
+
+        it('should reject | resolve', function (done) {
+            var input = {};
+
+            expect(Object.hasOwnProperties(input)).toBeRejected(done);
+        });
+    });
 });
