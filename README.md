@@ -4,6 +4,7 @@ A tool to verify the validity of your data using Promises.
 [![Build Status](https://travis-ci.org/yconoclast/verifyjs.svg)](https://travis-ci.org/yconoclast/verifyjs)
 [![Dependency Status](https://david-dm.org/yconoclast/verifyjs.svg)](https://david-dm.org/yconoclast/verifjs)
 [![devDependency Status](https://david-dm.org/yconoclast/verifyjs/dev-status.svg)](https://david-dm.org/yconoclast/erifyjs#info=devDependencies)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## How to use
 #### One input
