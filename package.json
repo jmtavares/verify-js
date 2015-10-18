@@ -1,6 +1,6 @@
 {
   "name": "verify-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).",
   "keywords": [
     "promises",
