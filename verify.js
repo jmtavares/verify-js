@@ -1,8 +1,8 @@
 /*
-* @overview verifyjs - Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).
+* @overview verify-js - Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).
 * @copyright Copyright (c) 2015 Jose Tavares
-* @license MIT License - https://github.com/yconoclast/verifyjs/blob/master/LICENSE
-* @version 1.0.0
+* @license MIT License - https://github.com/yconoclast/verify-js/blob/master/LICENSE
+* @version 1.0.5
 */
 (function(root) {
     // Use polyfill for setImmediate for performance gains

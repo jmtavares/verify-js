@@ -11,7 +11,6 @@ Verify all kind of data using Promises (Object, Array, String, Number, Boolean, 
 
 ``` js
 npm install verify-js --save
-
 ```
 
 Include the minified version (verify.min.js) in your page.
