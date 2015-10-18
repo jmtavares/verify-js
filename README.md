@@ -6,6 +6,15 @@ Verify all kind of data using Promises (Object, Array, String, Number, Boolean, 
 [![devDependency Status](https://david-dm.org/yconoclast/verify-js/dev-status.svg)](https://david-dm.org/yconoclast/verify-js#info=devDependencies)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
+## Install
+
+``` js
+npm install verify-js --save
+
+```
+
+Include the minified version (verify.min.js) in your page.
+
 ## How to use
 #### One input
 ``` js
