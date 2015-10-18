@@ -1,6 +1,6 @@
 {
   "name": "verify-js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).",
   "keywords": [
     "promises",
@@ -31,6 +31,7 @@
     "grunt-contrib-uglify": "^0.9.2",
     "grunt-eslint": "^17.2.0",
     "grunt-karma": "^0.12.1",
+    "grunt-release": "^0.13.0",
     "grunt-version-check": "^0.3.1",
     "jasmine-core": "^2.3.4",
     "jasmine-es6-promise-matchers": "^2.0.1",
