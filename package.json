@@ -1,9 +1,8 @@
 {
   "name": "verify-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).",
   "main": "verify.min.js",
-  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/yconoclast/verify-js.git"
