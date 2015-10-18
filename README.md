@@ -2,6 +2,7 @@
 Verify all kind of data using Promises (Object, Array, String, Number, Boolean, Function).
 
 [![Build Status](https://travis-ci.org/yconoclast/verifyjs.svg)](https://travis-ci.org/yconoclast/verifyjs)
+[![npm version](https://badge.fury.io/js/verify-js.svg)](https://badge.fury.io/js/verify-js)
 [![Dependency Status](https://david-dm.org/yconoclast/verify-js.svg)](https://david-dm.org/yconoclast/verifjs)
 [![devDependency Status](https://david-dm.org/yconoclast/verify-js/dev-status.svg)](https://david-dm.org/yconoclast/verify-js#info=devDependencies)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
